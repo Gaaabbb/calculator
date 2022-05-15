@@ -1,0 +1,178 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    color: white;
+    user-select: none;
+}
+
+body {
+    background-color: #e9e9e9;
+}
+
+.calculator {
+    margin: 5px auto;
+    height: 650px;
+    width: 350px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(41, 41, 41);
+    box-shadow: 5px 5px 20px rgb(43, 43, 43);
+}
+
+
+.display {
+    height: 120px;
+    width: 300px;
+    margin-top: 45px;
+    border-radius: 10px;
+    background-color: rgb(82, 82, 82);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 12px 2px black;
+    gap: 10px
+}
+
+.operationDisplay, .solutionDisplay  {
+    width: 285px;
+    white-space: nowrap;
+    text-align: right;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.operationDisplay {
+    height: 48px;
+}
+
+.solutionDisplay {
+    height: 35px;
+    color: rgb(194, 194, 194);
+}
+
+.operationDisplay::-webkit-scrollbar, .solutionDisplay::-webkit-scrollbar {
+    height: 1vh;
+}
+
+.operationDisplay::-webkit-scrollbar-thumb, .solutionDisplay::-webkit-scrollbar-thumb {
+    background-color: rgb(68, 68, 68);
+}
+
+.solutionDisplay {
+    font-size: 25px;
+}
+
+.allButtons {
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 0px; 
+}
+
+.rows {
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+.buttonNum {
+    background-color: rgb(94, 94, 94);
+}
+
+.buttonNum:hover {
+    background-color: rgb(141, 141, 141);
+}
+
+.buttonOp, .equal {
+    background-color: rgb(253, 170, 16);
+}
+
+.buttonOp:hover, .equal:hover {
+    background-color: rgb(255, 197, 91);
+}
+
+.buttonNum, .buttonOp {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equal {
+    height: 70px;
+    width: 152px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allClear, .delete {
+    height: 70px;
+    width: 111px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153, 153, 153);
+}
+
+.allClear:hover, .delete:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.button {
+    box-shadow: 0px 0px 6px 1px black;
+    transition: all .25s
+}
+
+.button:hover {
+    box-shadow: 0px 3px 9px 2px black;
+    transform: scale(1.1);
+    transition: all .25s
+}
+
+.button:active {
+    transform: scale(.95);
+    box-shadow: 0px 0px 4px 0px black;
+    transition: all .15s
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.footerText {
+    color: #656565;
+    font-size: 15px;
+}
+
+.githubLink {
+    display: flex;
+    text-decoration: none;
+}
+.fa-github {
+    color: black;
+    font-size: 20px;
+    transition: all .2s;
+}
+
+.fa-github:hover {
+    color: rgb(145, 145, 145);
+    transition: all .2s;
+}
