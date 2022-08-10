@@ -111,6 +111,7 @@ function convertToOperatorDisplay(e) {
 window.addEventListener("keydown", (key) => {
     if (key.key == 'A' || key.key == 'a') allClear()
     else if ((key.key == 'Enter' || key.key == '=') && isValidToOperate()) {
+        if (solution == "Can't divide by zero") return
         moveToFirstOperand()
         updateDisplay()
     }
@@ -141,6 +142,7 @@ button.forEach((button) => {
     button.addEventListener('click', () => {
         if (button.textContent == 'AC') allClear()
         else if ((button.textContent == '=') && isValidToOperate()) {
+            if (solution == "Can't divide by zero") return
             moveToFirstOperand()
             updateDisplay()
         }
